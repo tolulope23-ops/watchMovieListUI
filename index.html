@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieWatchlist</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+   <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>NKIRI</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="home" class=hide>HOME</a></li>
+                <li><a href="#" id="genre" class=hide>GENRE</a></li>
+                <li><a href="#" id="watchlist">MYWATCHLIST</a></li>
+                <li><a href="#" id="aboutus" class=hide>ABOUT US</a></li>
+                <li><a href="#" id="contactus" class=hide>CONTACT US</a></li>
+            </ul>
+        </nav>
+        <a href="#" id="menu"><i class="fa-solid fa-bars"></i></a>
+    </header>
+    <main>
+        <section id="drama" class="forall">
+            <div id="moviesection" class="eachsection">
+                <h2>DRAMA</h2>
+                <div class="parentmovies">
+                    <div class="movies"></div>
+                    <div class="movies"></div>
+                    <div class="movies"></div>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="drama" class="forall">
+            <div id="moviesection" class="eachsection">
+                <h2>DRAMA</h2>
+                <div class="parentmovies">
+                    <div class="movies"></div>
+                    <div class="movies"></div>
+                    <div class="movies"></div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="addwatchContainer">
+        <div id="subContainer">
+            <div id="imagecontainer">
+                <img src="imgg.jpg" alt="image">
+            </div>
+            <form>
+                <h2>Add Movie</h2>
+                <input type="text" placeholder="Title" id="title">
+                <input type="text" placeholder="Genre" id="genre">
+                <input type="date" placeholder="Released" id="released">
+                <p>Watched <input type="checkbox" id="watched"></p>
+                <div id="send">
+                    <button class="submit">Add Movie</button>
+                    <button class="submit">Update Movie</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

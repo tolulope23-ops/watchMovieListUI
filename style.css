@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #111111;
+    color: white;
+}
+
+header{
+    /* height:8vh; */
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid; */
+    align-content: center;
+    align-items: center;
+    padding:.5em 0;
+}
+
+header h1{
+    margin-left: .5em;
+    letter-spacing:-5px;
+    color: red;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+ ul li{
+    list-style: none;
+    margin-right: 2em;
+ }
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    /* transition: .5s; */
+}
+
+#menu i{
+    text-decoration: none;
+    color:white;
+    font-size: 1.5em;
+    margin-right:.5em;
+    /* font-weight: bold; */
+    border: none;
+}
+
+/* css action implementation */
+li a:hover{
+    color: red;
+    font-weight:600;
+    transition: .5s;
+}
+
+main{
+    /* width:100%; */
+    /* height:150vh; */
+    margin-top: 1em;
+    /* border:1px solid; */
+    padding:.2em 0;
+}
+
+.forall{
+    border: 1px solid red;
+    width: 100%;
+    height:45vh;
+    padding:.2em 0;
+}
+
+.eachsection{
+    height:100%;
+    /* border: 1px solid greenyellow; */
+    position: relative;
+}
+
+.eachsection h2{
+    font-size: 1.5em;
+    margin-left: 1.5em;
+}
+
+.parentmovies{
+    height:85%;
+    display: flex;
+    flex-direction: row;
+    padding:0 .7em 0 0 ;
+    /* border:1px solid blue; */
+}
+
+.movies{
+    width: 20%;
+    height:100%;
+    margin:.2em 0 0 .7em;
+    border-radius:1em;
+    background-color: red;
+}
+
+/* css action implementation */
+
+
+
+#addwatchContainer{
+    display:none;
+    width:30%;
+    height: 90vh;
+    margin: auto;
+    padding:.1em .1em;
+    transition: 5s;
+}
+
+#subContainer{
+    width:100%;
+    height: 100%;
+    border: 2px solid;
+    border-radius:1.5em 1.5em 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#imagecontainer{
+  width:100%;
+  height:38%;
+}
+
+#imagecontainer img{
+    width: 100%;
+    height: 100%;
+    border-radius:1.5em 1.5em 0 0;
+}
+
+form{
+    width:100%;
+    height:62%;
+    padding:.2em .5em;
+    margin: auto;
+    margin-top: .3em;
+}
+
+form h2{
+    text-align: center;
+}
+
+form input{
+    width:100%;
+    padding:.9em .6em;
+    margin:.6em 0;
+    /* outline: none; */
+    border: none;
+    border-radius: 1em;
+    font-size: 1em;
+}
+
+p{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: .2em .6em;
+    color: black;
+    margin: .7em 0;
+    border-radius: .8em;
+}
+
+p #watched{
+    margin-right:12em;
+    accent-color: black;
+    outline: none;
+    border: none;
+}
+
+#send{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+.submit{
+    margin-left: 1.4em;
+    padding:.7em 1em;
+    outline: none;
+    border: none;
+    border-radius: .7em;
+    background-color: red;
+    color: white;
+    font-size: 1em;
+    /* font-weight: bold; */
+}
+
+/* Responsiveness media query */
+
+@media screen and (max-width:768px) {
+    .hide{
+     display: none;
+}
+.movies{
+    width:50%;
+}
+.parentmovies{
+    justify-content: center;
+}
+    /* .forall{
+        text-align: center;
+    } */
+}
