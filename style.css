@@ -17,6 +17,7 @@ header{
     align-content: center;
     align-items: center;
     padding:.5em 0;
+    position: relative;
 }
 
 header h1{
@@ -42,7 +43,16 @@ nav ul{
 nav ul li a{
     text-decoration: none;
     color:white;
-    /* transition: .5s; */
+    transition: .7s;
+}
+
+nav ul li i{
+    color:white;
+    margin-left: .4em;
+}
+
+#genre{
+    position: relative;
 }
 
 #menu i{
@@ -50,26 +60,63 @@ nav ul li a{
     color:white;
     font-size: 1.5em;
     margin-right:.5em;
-    /* font-weight: bold; */
     border: none;
 }
 
 /* css action implementation */
 li a:hover{
     color: red;
-    font-weight:600;
-    transition: .5s;
+}
+#genreList{
+    display:none;
+    top:52px;
+    left:28em;
+}
+
+#menuList{
+    display:none;
+    top:52px;
+    right:1.5em;
+}
+
+.present{
+    content: "";
+    height: 2.5px;
+    background-color: red;
+}
+
+.list{
+    /* border:1px solid; */
+    position: absolute;
+    background-color: black;
+    border: none;
+    z-index: 1000;
+}
+
+.list ul li{
+    list-style: none;
+    margin: 1em 0 2em 1em;
+}
+
+.list ul li:last-of-type{
+    margin-bottom: 1em;
+}
+
+.list ul li a{
+    text-decoration: none;
+    color: white;
+    padding:.3em 2.5em;
 }
 
 main{
     /* width:100%; */
-    /* height:150vh; */
     margin-top: 1em;
     /* border:1px solid; */
     padding:.2em 0;
 }
 
 .forall{
+    display: none;
     border: 1px solid red;
     width: 100%;
     height:45vh;
@@ -191,7 +238,6 @@ p #watched{
     background-color: red;
     color: white;
     font-size: 1em;
-    /* font-weight: bold; */
 }
 
 /* Responsiveness media query */
@@ -200,13 +246,14 @@ p #watched{
     .hide{
      display: none;
 }
-.movies{
+    .movies{
     width:50%;
 }
-.parentmovies{
+    /* .parentmovies{
     justify-content: center;
-}
-    /* .forall{
-        text-align: center;
-    } */
+} */
+ .list{
+    width:100%;
+    
+ }
 }
